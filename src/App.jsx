@@ -5,7 +5,20 @@ function App() {
 
   return (
     <>
-      <h1>React Movie Filter</h1>
+      <div>
+        <header>
+          <h1>React Movie Filter</h1>
+        </header>
+        <main>
+          <div>
+            <ul>
+              <li>
+                
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
     </>
   )
 }
