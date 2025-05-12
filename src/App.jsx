@@ -18,6 +18,11 @@ function App() {
           </div>
         </header>
         <main>
+          <select>
+            <option value="">
+
+            </option>
+          </select>
           <div className='container'>
             <ul>
               {films.map((film) => (
