@@ -1,7 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import films from './data/films'
 
 function App() {
+
+  const [genreSelected, setGenreSelected] = useState('');
+
+  useEffect(() => {
+
+  }, [genreSelected]);
 
   return (
     <>
