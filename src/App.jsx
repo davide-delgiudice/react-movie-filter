@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import films from './data/films'
 
 function App() {
-
+  const [currentFilms, setCurrentFilms] = useState(films);
+  const [filteredFilms, setFilteredFilms] = useState(currentFilms);
   const [genreSelected, setGenreSelected] = useState('');
 
   useEffect(() => {
