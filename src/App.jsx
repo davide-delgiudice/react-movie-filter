@@ -6,9 +6,9 @@ function App() {
   const [filteredFilms, setFilteredFilms] = useState(currentFilms);
   const [genreSelected, setGenreSelected] = useState('');
 
-  useEffect(() => {
+  const generi = ['Fantascienza', 'Thriller', 'Romantico', 'Azione'];
 
-  }, [genreSelected]);
+
 
   return (
     <>
@@ -19,14 +19,15 @@ function App() {
           </div>
         </header>
         <main>
-          <select>
-            <option value="">
-
-            </option>
+          <select value={genreSelected} onChange={(e) => setGenreSelected(e.target.value)}>
+            <option value="">Tutti i generi</option>
+            {generi.map((g, index) => (
+              <option key={index} value={g}>{g}</option>
+            ))};
           </select>
           <div className='container'>
             <ul>
-              {films.map((film) => (
+              {filteredFilms.map((film) => (
                 <li>
                   {film.title}
                 </li>
