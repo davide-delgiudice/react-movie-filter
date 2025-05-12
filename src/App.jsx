@@ -7,14 +7,18 @@ function App() {
     <>
       <div>
         <header>
-          <h1>React Movie Filter</h1>
+          <div className='container'>
+            <h1>React Movie Filter</h1>
+          </div>
         </header>
         <main>
-          <div>
+          <div className='container'>
             <ul>
-              <li>
-                
-              </li>
+              {films.map((film) => (
+                <li>
+                  {film.title}
+                </li>
+              ))}
             </ul>
           </div>
         </main>
